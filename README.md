@@ -2,10 +2,7 @@
 
 ## Etape 1 : choix du nom du site
 
-Après avoir effectué quelques recherches sur le web et vérifié si les noms choisis étaient déjà pris sur des sites comme l'INPI, j'ai choisi le nom suivant :
-
-## Jardin secret d'Eden 
-
+Après avoir effectué quelques recherches sur le web et vérifié si les noms choisis étaient déjà pris sur des sites comme l'INPI, j'ai choisi le nom suivant : **"Jardin secret d'Eden"**
 
 ## Pourquoi "Jardin secret d'Eden" ?
 
