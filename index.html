@@ -1,14 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style-reset.css"/>
-    <link rel="stylesheet" href="./CSS/style.css"/>
-    <title>Document</title>
-</head>
-<body>
-    <h1> Jardin secret d'Eden</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style-reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Jardin secret d'Eden</title>
+  </head>
+  <body>
+    <h1>Jardin secret d'Eden</h1>
+    <header class="header">
+
+    </header>
+
+    <div class="container">
+      <aside class="sidebar-filters">
+        <h2 class="sidebar-filters__titre">Filtres</h2>
+        <!-- Section pour le format -->
+
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Format</h3>
+          <ul class="sidebar-filters__list sidebar-filters__list--format">
+            <li class="sidebar-filters__list-item">Ebook</li>
+            <li class="sidebar-filters__list-item">Autre format</li>
+          </ul>
+        </section>
+
+        <!-- Section pour l'année de publication -->
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Année de publication</h3>
+
+          <ul
+            class="sidebar-filters__list sidebar-filters__list--publication-year"
+          >
+            <li class="sidebar-filters__list-item">première année</li>
+            <li class="sidebar-filters__list-item">>deuxième année/li></li>
+          </ul>
+        </section>
+
+        <!-- Section pour l'année de publication -->
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Prix (gamme)</h3>
+          <ul class="sidebar-filters__list sidebar-filters__list--range-price">
+            <li class="sidebar-filters__list-item">Range</li>
+          </ul>
+        </section>
+
+        <!-- Section pour la langue -->
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Langue</h3>
+          <ul class="sidebar-filters__list sidebar-filters__list--language">
+            <li class="sidebar-filters__list-item">Langue 1</li>
+            <li class="sidebar-filters__list-item">Langue 2</li>
+          </ul>
+        </section>
+        <!-- section pour le pays de publication-->
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Pays de publication</h3>
+          <ul
+            class="sidebar-filters__list sidebar-filters__list--place-of-publication"
+          >
+            <li class="sidebar-filters__list-item">pays 1</li>
+            <li class="sidebar-filters__list-item">Pays 2</li>
+          </ul>
+        </section>
+
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Reliure</h3>
+          <ul class="sidebar-filters__list sidebar-filters__list--binding">
+            <li class="sidebar-filters__list-item">Broché</li>
+            <li class="sidebar-filters__list-item">Relié</li>
+          </ul>
+        </section>
+        <section class="sidebar-filters__section">
+          <h3 class="sidebar-filters__section-title">Fournisseur</h3>
+
+          <ul class="sidebar-filters__list sidebar-filters__list--supplier">
+            <li class="sidebar-filters__list-item">Fournisseur 1</li>
+            <li class="sidebar-filters__list-item">Fournisseur2</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="main">
+        <!-- Section d'affichage des résultats -->
+        <section class="display">
+          <p class="display__number-results">72 résultats</p>
+          <p class="display__number-titles-page">
+            Nombre de titre affiché par page
+          </p>
+          <p class="display__sort-publication-year">
+            Tri par date date de publication
+          </p>
+        </section>
+
+        <!-- Section de filtres actifs -->
+        <section class="filter-active">
+          <ul>
+            <li>
+              <button class="filter-active__item1">
+                Filtre 1<span class="filter-active__close">x</span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-active__item2">
+                Filtre 2<span class="filter-active__close">x</span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-active__item3">
+                Filtre 3<span class="filter-active__close">x</span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-active__item4">
+                Filtre 4<span class="filter-active__close">x</span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-active__item5">
+                Filtre 5<span class="filter-active__close">x</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section des produits -->
+        <section class="products-list">
+          <article class="product-item">
+            <img src="#" class="product-item__cover" />
+            <h2 class="product-item__title">Titre de l'ouvrage</h2>
+            <h3 class="product-item__subtitle">Sous-titre</h3>
+            <div class="product-item__info">
+              <p class="product-item__format">Format</p>
+              <p class="product-item__publisher">Editeur</p>
+              <p class="product-item__content-level">Niveau de difficulté</p>
+              <p class="product-item__isbn">ISBN</p>
+              <p class="product-item__publication-year">Date de publication</p>
+              <p class="product-item__lc-class">Classe LC</p>
+              <p class="product-item__language">Langue</p>
+              <p class="product-item__place-publication">Lieu de publication</p>
+              <p class="product-item__subject-heading">Catégorie</p>
+            </div>
+            <a href="#" class="product-item__item-details"
+              >Détail de l'article</a
+            >
+            <a href="#" class="product-item__purchase-options"
+              >Options d'achat</a
+            >
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+  </body>
 </html>
