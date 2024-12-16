@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+  font-family:"Open Sans",Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size:1rem;
+  line-height: 1.5;
+ 
+}
+
+.header{
+  height:90px;
+  border:1px solid black;
+  background-color: white;
+  position:fixed;
+  top:0;
+  z-index:1000;
+  width:100%;
+  margin-bottom:100px
+}
+
+.nav{
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+ul.nav__menu,ul.nav__icons{
+  display: flex;
+  align-items: center;
+
+
+}
+
+.nav__logo{
+  display:inline-block;
+  width:auto;
+ }
+ 
+ .nav__logo img{
+   display:block;
+   width:100%;
+   height: auto;
+   max-height: 80px;
+   object-fit: contain;
+ }
+
+.nav__menu{
+  height:100%;
+
+}
+
+
+.nav__menu li{
+  display: flex;
+  padding:10px;
+  height:auto;
+  align-items: center;
+
+
+}
+
+.nav__menu a{
+ 
+  color: #002F56;
+  font-weight: bold;
+  padding: 0.5rem 1rem; 
+
+
+}
+.nav__menu li:hover{
+  background-color: #002F56;
+  color:white;
+  border-radius: 4px; 
+
+
+}
+
+a.nav__link {
+  margin-right: 2rem;
+  color:#002F56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.nav__link-menu:hover{
+  
+  color:white;
+
+}
+
+
+
+a.nav__link-icons {
+ 
+margin-right: 25px;
+}
+
+
+.filters-wrapper{
+  margin-top:100px;
+  display: flex;
+  justify-content: space-around;
+}

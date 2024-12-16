@@ -5,127 +5,130 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style-reset.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Jardin secret d'Eden</title>
 </head>
 
 <body>
-    <h1>Jardin secret d'Eden</h1>
 
     <!--Navigation -->
     <header class="header">
         <nav class="nav">
-            <ul class="nav__logo" aria-label="Lien vers la page d'accueil">
-                <li class="nav__item">
-                    <a href="#" class="nav__link nav__link--logo">
-                        <img src="#" alt="Logo de l'entreprise" />LOGO
-                    </a>
-                </li>
-            </ul>
+             <a href="#" class="nav__link nav__logo">
+                 <img src="./assets/images/logos/logo.png" alt="logo"/>
+            </a>
+           
+        
             <ul class="nav__menu" aria-label="Navigation principale">
-                <li class="nav__item nav__item--collection">
-                    <a href="#" class="nav__link">Collections</a>
+                <li>
+                    <a href="#" class="nav__link nav__link-menu">Collections</a>
                 </li>
-                <li class="nav__item nav__item--account">
-                    <a href="#" class="nav__link">Comptes</a>
+                <li>
+                    <a href="#" class="nav__link nav__link-menu">Comptes</a>
                 </li>
-                <li class="nav__item nav__item--approvals">
-                    <a href="#" class="nav__link">Approvals et Notifications</a>
+                <li>
+                    <a href="#" class="nav__link nav__link-menu">Approvals et Notifications</a>
                 </li>
-                <li class="nav__item nav__item--library-activity">
-                    <a href="#" class="nav__link">Activité bibliothèque</a>
+                <li>
+                    <a href="#" class="nav__link nav__link-menu">Activité bibliothèque</a>
                 </li>
-                <li class="nav__item nav__item--e-resources">
-                    <a href="#" class="nav__link">e-ressources</a>
+                <li>
+                    <a href="#" class="nav__link nav__link-menu">e-ressources</a>
                 </li>
             </ul>
 
             <ul class="nav__icons" aria-label="Liens pour les actions rapides">
-                <li class="nav__item nav__item--alert">
-                    <a href="#" aria-label="Notifications" class="nav__link">
-                        Alerts icone</a>
+                <li >
+                    <a href="#" aria-label="Notifications" class="nav__link nav__link-icons">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
                 </li>
-                <li class="nav__item nav__item--message">
-                    <a href="#" aria-label="messages reçus" class="nav__link">message icone</a>
+                <li>
+                    <a href="#" aria-label="Dossiers" class="nav__link nav__link-icons">
+                        <i class="fa-solid fa-folder"></i>
+                    </a>
                 </li>
-                <li class="nav__item nav__item--basket">
-                    <a href="#" aria-label="display__sort-publication-year" class="nav__link">
-                        panier icone</a>
+                <li>
+                    <a href="#" aria-label="Panier" class="nav__link nav__link-icons">
+                        <i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
-                <li class="nav__item nav__item--profil">
-                    <a href="#" aria-label="Mon profil" class="nav__link">
-                        profil icone</a>
+                <li>
+                    <a href="#" aria-label="Mon profil" class="nav__link nav__link-icons">
+                        <i class="fa-solid fa-user"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
-
+   
+  
     <!--Sidebar avec les filtres-->
     <div class="filters-wrapper">
-        <aside class="sidebar-filters">
-            <h2 class="sidebar-filters__title">Filtres</h2>
+        <aside class="sidebar">
+            <h2 class="sidebar__title">Filtres</h2>
 
             <!-- Section pour le format -->
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Format</h3>
-                <ul class="sidebar-filters__list sidebar-filters__list--format">
-                    <li class="sidebar-filters__list-item">Ebook</li>
-                    <li class="sidebar-filters__list-item">Autre format</li>
+            <section>
+                <h3 class="sidebar__subtitle">Format</h3>
+                <ul class="sidebar__list">
+                    <li >Ebook</li>
+                    <li >Autre format</li>
                 </ul>
             </section>
 
             <!-- Section pour l'année de publication -->
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Année de publication</h3>
+            <section>
+                <h3 class="sidebar__subtitle">Année de publication</h3>
 
-                <ul class="sidebar-filters__list sidebar-filters__list--publication-year">
-                    <li class="sidebar-filters__list-item">première année</li>
-                    <li class="sidebar-filters__list-item">deuxième année</li>
+                <ul class="sidebar__list">
+                    <li>première année</li>
+                    <li>deuxième année</li>
                 </ul>
             </section>
 
             <!-- Section pour le prix-->
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Prix (gamme)</h3>
-                <ul class="sidebar-filters__list sidebar-filters__list--price-range">
-                    <li class="sidebar-filters__list-item">Range</li>
+            <section>
+                <h3 class="sidebar_subtitle">Prix (gamme)</h3>
+                <ul class="sidebar__list">
+                    <li>Range</li>
                 </ul>
             </section>
 
             <!-- Section pour la langue -->
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Langue</h3>
-                <ul class="sidebar-filters__list sidebar-filters__list--language">
-                    <li class="sidebar-filters__list-item">Langue 1</li>
-                    <li class="sidebar-filters__list-item">Langue 2</li>
+            <section >
+                <h3 class="sidebar__subtitle">Langue</h3>
+                <ul class="sidebar__list">
+                    <li>Langue 1</li>
+                    <li>Langue 2</li>
                 </ul>
             </section>
             <!-- section pour le pays de publication-->
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Pays de publication</h3>
-                <ul class="sidebar-filters__list sidebar-filters__list--place-of-publication">
-                    <li class="sidebar-filters__list-item">pays 1</li>
-                    <li class="sidebar-filters__list-item">Pays 2</li>
+            <section>
+                <h3 class="sidebar__subtitle">Pays de publication</h3>
+                <ul class="sidebar__list">
+                    <li>pays 1</li>
+                    <li>Pays 2</li>
                 </ul>
             </section>
             <!-- Section pour la reliure-->
 
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Reliure</h3>
-                <ul class="sidebar-filters__list sidebar-filters__list--binding">
-                    <li class="sidebar-filters__list-item">Broché</li>
-                    <li class="sidebar-filters__list-item">Relié</li>
+            <section>
+                <h3 class="sidebar_subtitle">Reliure</h3>
+                <ul class="sidebar_list">
+                    <li>Broché</li>
+                    <li >Relié</li>
                 </ul>
             </section>
 
             <!-- Section pour le fournisseur -->
 
             <section class="sidebar-filters__section">
-                <h3 class="sidebar-filters__section-title">Fournisseur</h3>
+                <h3 class="sidebar__subtitle">Fournisseur</h3>
 
-                <ul class="sidebar-filters__list sidebar-filters__list--supplier">
-                    <li class="sidebar-filters__list-item">Fournisseur 1</li>
-                    <li class="sidebar-filters__list-item">Fournisseur2</li>
+                <ul class="sidebar_list ">
+                    <li>Fournisseur 1</li>
+                    <li>Fournisseur2</li>
                 </ul>
             </section>
 
@@ -154,22 +157,22 @@
                         </button>
                     </li>
                     <li class="filters-active__item">
-                        <button class="filters-active__button filters-active__button--active">
+                        <button class="filters-active__button filters-active__button--active" aria-label="Supprimer le filtre : Filtre 1">
                             Filtre 2<span class="filters-active__close">x</span>
                         </button>
                     </li>
                     <li class="filters-active__item">
-                        <button class="filters-active__button filters-active__button--active">
+                        <button class="filters-active__button filters-active__button--active" aria-label="Supprimer le filtre : Filtre 2">
                             Filtre 3<span class="filters-active__close">x</span>
                         </button>
                     </li>
                     <li class="filters-active__item">
-                        <button class="filters-active__button filters-active__button--active">
+                        <button class="filters-active__button filters-active__button--active" aria-label="Supprimer le filtre : Filtre 3">
                             Filtre 4<span class="filters-active__close">x</span>
                         </button>
                     </li>
                     <li class="filters-active__item">
-                        <button class="filters-active__button filters-active__button--active">
+                        <button class="filters-active__button filters-active__button--active" aria-label="Supprimer le filtre : Filtre 4">
                             Filtre 5<span class="filters-active__close">x</span>
                         </button>
                     </li>
@@ -177,24 +180,44 @@
             </section>
 
             <!-- Section des produits -->
-            <section class="products-list">
-                <article class="product-item">
-                    <img src="#" alt="" class="product-item__cover" />
-                    <h2 class="product-item__title">Titre de l'ouvrage</h2>
-                    <h3 class="product-item__subtitle">Sous-titre</h3>
-                    <div class="product-item__info">
-                        <p class="product-item__format">Format</p>
-                        <p class="product-item__publisher">Editeur</p>
-                        <p class="product-item__content-level">Niveau de difficulté</p>
-                        <p class="product-item__isbn">ISBN</p>
-                        <p class="product-item__publication-year">Date de publication</p>
-                        <p class="product-item__lc-class">Classe LC</p>
-                        <p class="product-item__language">Langue</p>
-                        <p class="product-item__place-publication">Lieu de publication</p>
-                        <p class="product-item__subject-heading">Catégorie</p>
-                    </div>
-                    <a href="#" class="product-item__details-link">Détail de l'article</a>
-                    <a href="#" class="product-item__purchase-options-link">Options d'achat</a>
+            <section class="products">
+                <article class="product">
+                    <img src="#" alt="couveture de l'ouvrage : Titre de l'ouvrage à ajouter" class="product__cover" />
+                    <h2 class="product__title">Titre de l'ouvrage</h2>
+                    <h3 class="product__subtitle">Sous-titre</h3>
+                    <ul class="product__info">
+                        <li class="product__info-item">
+                            <strong>Format :</strong> Format de l'ouvrage
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Éditeur :</strong> Nom de l'éditeur
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Niveau :</strong> Niveau de difficulté
+                        </li>
+                        <li class="product__info-item">
+                            <strong>ISBN :</strong> Numéro ISBN
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Publication :</strong> Année de publication
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Classe LC :</strong> Classification LC
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Langue :</strong> Langue utilisée
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Lieu :</strong> Lieu de publication
+                        </li>
+                        <li class="product__info-item">
+                            <strong>Catégorie :</strong> Sujet principal
+                        </li>
+                    </ul>
+                    <div class="product__actions">
+                    <a href="#" class="product_details-link">Détail de l'article</a>
+                    <a href="#" class="product__purchase-options-link">Options d'achat</a>
+                </div>
                 </article>
             </section>
         </main>
@@ -203,9 +226,9 @@
     <!--pied de page-->
     <footer class="footer">
         <ul class="footer__list">
-            <li class="footer__item footer__item--about"><a href="#" class="footer__link">Qui sommes-nous ?</a></li>
-            <li class="footer__item footer__item--contact"><a href="#" class="footer__link">Contact</a></li>
-            <li class="footer__item footer__item--sales-condition"><a href="#" class="footer__link">Conditions générales
+            <li ><a href="#" class="footer__link">Qui sommes-nous ?</a></li>
+            <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Conditions générales
                     de vente</a></li>
         </ul>
 
