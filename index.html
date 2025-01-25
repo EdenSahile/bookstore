@@ -66,70 +66,252 @@
     <!--Sidebar avec les filtres-->
     <div class="filters-wrapper">
         <aside class="sidebar">
-            <h2 class="sidebar__title">Filtres</h2>
+            <h2 class="sidebar__title">Filtres :</h2>
 
             <!-- Section pour le format -->
-            <section>
-                <h3 class="sidebar__subtitle">Format</h3>
-                <ul class="sidebar__list">
-                    <li >Ebook</li>
-                    <li >Autre format</li>
+            <section class="sidebar__filters-card">
+                <h3 class="sidebar__subtitle">Format 
+                    <button class="sidebar__toggle" aria-expanded="false" aria-controls="filter-format" >
+                        <i class="fa-solid fa-angle-down"></i> <!-- Flèche vers le bas -->
+
+
+                    </button>
+                </h3>
+                <ul class="sidebar__list" id="filter-format" >
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="ebook" value="ebook">
+                            Ebook
+                        </label>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="epub" value="epub">
+                            Epub
+                        </label>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="relie" value="relie">
+                         Relié
+                        </label>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="broche" value="broche">
+                            Broché
+                        </label>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="carte" value="carte">
+                         Carte
+                        </label>
+                    </li>
                 </ul>
             </section>
 
             <!-- Section pour l'année de publication -->
-            <section>
+            <section class="sidebar__filters-card">
                 <h3 class="sidebar__subtitle">Année de publication</h3>
+            
+                    <button class="sidebar__toggle" aria-expanded="false" aria-controls="filter-publishing-year" aria-label="Toggle année de publication">
+                        <i class="fa-solid fa-angle-down"></i> <!-- Flèche vers le bas -->
 
-                <ul class="sidebar__list">
-                    <li>première année</li>
-                    <li>deuxième année</li>
+
+                    </button>
+
+                <ul class="sidebar__list" id="filter-publishing-year" hidden>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="publishing-year" value="2024">
+                        2024 (année en cours)
+                        </label>
+                      </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="publishing-year" value="2023">
+                            2023
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="publishing-year" value="2022">
+                            2022
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" name="publishing-year" value="2021">
+                            2021
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="publishing-year" value="2020">
+                            2020
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="publishing-year" value="2019">
+                            2019
+                        </label>
+                    </li>
+
+
                 </ul>
             </section>
 
             <!-- Section pour le prix-->
-            <section>
-                <h3 class="sidebar_subtitle">Prix (gamme)</h3>
-                <ul class="sidebar__list">
-                    <li>Range</li>
-                </ul>
+            <section class="sidebar__filters-card">
+                <h3 class="sidebar__subtitle" id="price-title">Prix (gamme)</h3>
+                <button class="sidebar__toggle" aria-expanded="false" aria-controls="price" aria-label="Afficher/Masquer la gamme de prix">
+                    <i class="fa-solid fa-angle-down"></i> 
+
+                </button>
+               
+                <label for="price-range" class="sr-only"> Sélectionner la gamme de prix</label>
+                    <input type="range" name="price" id="price-range"  min="10" max="200" step="10" class="price-slider" aria-labelledby="price-title">
+               
+                    <div class="price-range-values">
+                        <span id="min-price">10</span> - <span id="max-price">200</span>
+                    </div>
+                    
+                    <button class="sidebar__apply" type="button">Appliquer</button>
             </section>
 
             <!-- Section pour la langue -->
-            <section >
+            <section class="sidebar__filters-card">
                 <h3 class="sidebar__subtitle">Langue</h3>
-                <ul class="sidebar__list">
-                    <li>Langue 1</li>
-                    <li>Langue 2</li>
-                </ul>
+                <div class="sidebar__list">
+                    <li>
+                        <label for="language" class="sr-only">Choisir une langue</label>
+                         <select name="language" id="language" class="sidebar__select sidebar__select--language">
+                                                <option value="fr" selected>Français</option>
+                                                <option value="af">Afrikaans</option>
+                                                <option value="sq">Albanais</option>
+                                                <option value="ar">Arabe</option>
+                                                <option value="hy">Arménien</option>
+                                                <option value="bn">Bengali</option>
+                                                <option value="bs">Bosniaque</option>
+                                                <option value="ca">Catalan</option>
+                                                <option value="hr">Croate</option>
+                                                <option value="cs">Tchèque</option>
+                                                <option value="da">Danois</option>
+                                                <option value="nl">Néerlandais</option>
+                                                <option value="en">Anglais</option>
+                                                <option value="eo">Espéranto</option>
+                                                <option value="et">Estonien</option>
+                                                <option value="tl">Filipino</option>
+                                                <option value="fi">Finlandais</option>
+                                                <option value="de">Allemand</option>
+                                                <option value="el">Grec</option>
+                                                <option value="gu">Gujarati</option>
+                                                <option value="hi">Hindî</option>
+                                                <option value="hu">Hongrois</option>
+                                                <option value="id">Indonésien</option>
+                                                <option value="it">Italien</option>
+                                                <option value="ja">Japonais</option>
+                                                <option value="jw">Javanais</option>
+                                                <option value="ko">Coréen</option>
+                                                
+                                </select>
+                   
+                    </li>
+                    
+                </div>
             </section>
             <!-- section pour le pays de publication-->
-            <section>
+            <section class="sidebar__filters-card">
                 <h3 class="sidebar__subtitle">Pays de publication</h3>
-                <ul class="sidebar__list">
-                    <li>pays 1</li>
-                    <li>Pays 2</li>
-                </ul>
+                <div class="sidebar__list">
+                    <li>
+                        <label for="country" class="sr-only">Choisir une langue</label>
+                     
+                         <select name="country" id="country" class="sidebar__select sidebar__select--country">
+                            <option value="france" selected>France</option>
+                            <option value="afghanistan">Afghanistan</option>
+                            <option value="albanie">Albanie</option>
+                            <option value="algerie">Algérie</option>
+                            <option value="allemagne">Allemagne</option>
+                            <option value="andorre">Andorre</option>
+                            <option value="angola">Angola</option>
+                            <option value="antigua-et-barbuda">Antigua-et-Barbuda</option>
+                            <option value="argentine">Argentine</option>
+                            <option value="armenie">Arménie</option>
+                            <option value="australie">Australie</option>
+                            <option value="autriche">Autriche</option>
+                            <option value="azerbaidjan">Azerbaïdjan</option>
+                            <option value="bahamas">Bahamas</option>
+                            <option value="bahrein">Bahreïn</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="barbade">Barbade</option>
+                            <option value="belgique">Belgique</option>
+                            <option value="belize">Belize</option>
+                            <option value="benin">Bénin</option>
+                            <option value="bhoutan">Bhoutan</option>
+                                </select>
+                   
+                    </li>
+                    
+                </div>
             </section>
-            <!-- Section pour la reliure-->
-
-            <section>
-                <h3 class="sidebar_subtitle">Reliure</h3>
-                <ul class="sidebar_list">
-                    <li>Broché</li>
-                    <li >Relié</li>
-                </ul>
-            </section>
+          
 
             <!-- Section pour le fournisseur -->
 
-            <section class="sidebar-filters__section">
-                <h3 class="sidebar__subtitle">Fournisseur</h3>
+            <section class="sidebar__filters-card">
+                <h3 class="sidebar__subtitle">Hébergeur</h3>
 
                 <ul class="sidebar_list ">
-                    <li>Fournisseur 1</li>
-                    <li>Fournisseur2</li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="Hebergeur1" value="Hebergeur1">
+                           Hébergeur 1
+                        </label>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="Hebergeur2" value="Hebergeur2">
+                           Hébergeur 2
+                        </label>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <label>
+                            <input type="checkbox" name="Hebergeur3" value="Hebergeur3">
+                           Hébergeur 3
+                        </label>
+                    </li>
                 </ul>
+            </section>
+            <section class="sidebar__filters-card">
+                <h3 class="sidebar__subtitle">test search</h3>
+
+                <div class="sidebar__list sidebar__list--search ">
+                    <input type="search" name="search-publisher"  placeholder="chercher un éditeur" class="sidebar__input-search">
+
+                    <ul id="suggestions-list" class="suggestions-list">
+                        <li class="sidebar__list-item">
+                      
+                            Hébergeur 1
+                           </li>
+                           <li class="sidebar__list-item">
+                               <label>
+                                   <input type="checkbox" name="Hebergeur2" value="Hebergeur2">
+                                  Hébergeur 2
+                               </label>
+                           </li>
+                           <li class="sidebar__list-item">
+                               <label>
+                                   <input type="checkbox" name="Hebergeur3" value="Hebergeur3">
+                                  Hébergeur 3
+                               </label>
+                           </li>
+                </ul>
+                </div>
             </section>
 
         </aside>
@@ -233,6 +415,9 @@
         </ul>
 
     </footer>
+
+
+
 </body>
 
 </html>
